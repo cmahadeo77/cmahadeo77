@@ -35,7 +35,7 @@ End-to-end campaign and outreach automation for mission-driven brands — from e
 
 | Repo | Description |
 |---|---|
-| [stablecoin-b2b-sourcing](https://github.com/cmahadeo77/stablecoin-b2b-sourcing) | USDC escrow payment system for ingredient sourcing |
+| [stablecoin-b2b-sourcing](https://github.com/cmahadeo77/stablecoin-b2b-sourcing-) | USDC escrow payment system for ingredient sourcing |
 | [n8n-payments-intelligence](https://github.com/cmahadeo77/n8n-payments-intelligence) | AI-powered payments signal monitor (stablecoin, CBDC, fintech) |
 | [n8n-business-intelligence](https://github.com/cmahadeo77/n8n-business-intelligence) | Market intelligence workflow — feeds → Claude → Notion |
 | [n8n-workflows](https://github.com/cmahadeo77/n8n-workflows) | Full automation stack: signals, email, social, outreach |
