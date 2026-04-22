@@ -15,6 +15,13 @@ Modernizing B2B payment rails for ingredient sourcing and distribution using pro
 - USDC on Stellar for cross-border supplier payments
 - Settlement automation tied to logistics delivery oracles
 
+### Visa Direct & Card Payment Networks
+Mock server and test harness for Visa Direct OCT (push funds) and AFT (pull from source/wallet) — built for learning the real API schemas, response codes, and 2-leg payment flows without needing Visa sandbox credentials.
+
+- Amount-based scenario triggers for all major response codes (RC 00, 05, 51, 57, 62, 63, 94...)
+- Paired AFT→OCT flow simulating the full pull-then-push money movement sequence
+- Frontend UI with live JSON request/response viewer and transaction log
+
 ### AI-Powered Business Intelligence
 n8n-based intelligence systems that monitor payments signals, score market moves, and surface actionable insights before markets open.
 
@@ -33,13 +40,14 @@ End-to-end campaign and outreach automation for mission-driven brands — from e
 
 ## Repos
 
-| Repo | Description |
-|---|---|
-| [stablecoin-b2b-sourcing](https://github.com/cmahadeo77/stablecoin-b2b-sourcing) | USDC escrow payment system for ingredient sourcing |
-| [n8n-payments-intelligence](https://github.com/cmahadeo77/n8n-payments-intelligence) | AI-powered payments signal monitor (stablecoin, CBDC, fintech) |
-| [n8n-business-intelligence](https://github.com/cmahadeo77/n8n-business-intelligence) | Market intelligence workflow — feeds → Claude → Notion |
-| [n8n-workflows](https://github.com/cmahadeo77/n8n-workflows) | Full automation stack: signals, email, social, outreach |
-| [q2-outreach](https://github.com/cmahadeo77/q2-outreach) | B2B outreach + Gmail automation system |
+| Repo | Description | Stack |
+|---|---|---|
+| [stablecoin-b2b-sourcing](https://github.com/cmahadeo77/stablecoin-b2b-sourcing) | USDC escrow payment system for ingredient sourcing | Solidity · USDC · Stellar · Streamlit |
+| [visa-direct-mock](https://github.com/cmahadeo77/visa-direct-mock) | Visa Direct OCT + AFT mock server — scenario triggers, 2-leg paired flow, live JSON UI | Node.js · Express |
+| [n8n-payments-intelligence](https://github.com/cmahadeo77/n8n-payments-intelligence) | AI-powered payments signal monitor (stablecoin, CBDC, fintech) | n8n · Claude · Notion |
+| [n8n-business-intelligence](https://github.com/cmahadeo77/n8n-business-intelligence) | Market intelligence workflow — feeds → Claude → Notion | n8n · Claude · Notion |
+| [n8n-workflows](https://github.com/cmahadeo77/n8n-workflows) | Full automation stack: signals, email, social, outreach | n8n · Gmail API · LinkedIn |
+| [q2-outreach](https://github.com/cmahadeo77/q2-outreach) | B2B outreach + Gmail automation + daily business intelligence report | Node.js · Gmail API · FedEx API |
 
 ---
 
@@ -56,7 +64,7 @@ Mission Commerce       █████████░░░░░░  Natural / 
 
 ## Stack
 
-`Python` · `Solidity` · `Node.js` · `n8n` · `Streamlit` · `USDC / Stellar` · `Claude API` · `Circle Payments API` · `Gmail API` · `Notion API`
+`Python` · `Solidity` · `Node.js` · `n8n` · `Streamlit` · `USDC / Stellar` · `Claude API` · `Visa Direct API` · `Circle Payments API` · `Gmail API` · `FedEx Track API` · `Notion API`
 
 ---
 
